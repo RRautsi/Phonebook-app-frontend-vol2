@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-style {
+    @apply border text-blue-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 md:w-80 p-1 bg-white border-gray-600 text-black focus:ring-blue-500 focus:border-blue-500
+  }
+  .input-style-2 {
+    @apply relative block w-full appearance-none border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm
+  }
+  .checkbox-style {
+    @apply text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-1
+  }
+  .notification {
+    @apply bg-emerald-400 text-lg border-solid rounded-xl mb-2 w-80 md:w-96 m-auto text-center 
+  }
+  .error {
+    @apply bg-rose-500 text-lg border-solid rounded-xl p-1 mb-1 w-80 md:w-96 m-auto text-center
+  }
+  .button-custom {
+    @apply overflow-hidden rounded-lg bg-cyan-200 shadow hover:bg-cyan-100 active:bg-cyan-200
+  }
+  .body-custom {
+    @apply h-screen overflow-auto bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-400 font-roboto
+  }
+  .instructions {
+    @apply bg-black text-sm text-white border-solid border-white rounded-xl px-2 py-2 mb-2 w-80 md:w-96 m-auto
+  }
+  .sign-up-btn {
+    @apply flex w-full justify-center rounded-md border border-transparent py-2 px-4 text-sm font-medium hover:bg-indigo-700 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-1 
+  }
+}
